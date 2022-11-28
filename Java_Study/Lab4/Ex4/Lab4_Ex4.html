@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Scoping Rules</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+<h1>Examine Scoping Rules</h1>
+<h2 id="myWelcome">Comparing Local Variables to Global Variables</h2>
+Enter a word: <input class="textboxes" id="myWordToPass" type="text"><br>
+<button onclick="testFunctionOne(myWordToPass.value);">Test Function One</button><br/>
+<button onclick="testFunctionTwo(myWordToPass.value);">Test Function Two</button><br/>
+<button onclick="testFunctionThree(myWordToPass.value);">Test Function Three</button><br/>
+<h2>Values of the Variables</h1>
+<ul>
+<li>globalvar1 = <label id="g1"></label></li>
+<li>aaa = <label id="aaa"></label></li>
+<li>localvar1 = <label id="l1"></label></li>
+</ul>
+</body>
+</html>
